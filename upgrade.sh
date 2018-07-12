@@ -8,6 +8,8 @@ if [ -f /etc/redhat-release ];then
         OS='Debian'
     elif [ ! -z "`cat /etc/issue | grep Ubuntu`" ];then
         OS='Ubuntu'
+    elif [ ! -z "`cat /etc/issue | grep Deepin`" ];then
+        OS='Deepin'
     else
         echo "Not support OS, Please reinstall OS and retry!"
         exit 1
